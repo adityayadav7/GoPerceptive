@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -50,30 +39,26 @@
   padding: 20px;
 }
 .table{
-  /* margin: 0 auto; */
   border: 1px solid #ccc;
-border-radius: 4px;
-overflow: hidden;
-display: grid;
-width: min-content;
+  border-radius: 4px;
+  overflow: hidden;
+  display: grid;
+  width: min-content;
 }
 .table-header{
   display: grid;
-grid-template-columns: 1fr repeat(2,5fr) 2fr repeat(2,3fr) 2fr;
-border-bottom: 1px solid #ccc;
+  grid-template-columns: 1fr repeat(2,5fr) 2fr repeat(2,3fr) 2fr;
+  border-bottom: 1px solid #ccc;
 }
 .table-header-content{
   display: flex;
   text-align: center;
-font-weight: 700;
-background: rgb(139,184,241);
-padding: 10px;
-/* border: 1px solid #ccc; */
-/* width: 100%; */
-line-height: 20px;
-
-justify-content: center;
-align-items: center;
+  font-weight: 700;
+  background: rgb(139,184,241);
+  padding: 10px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .item{
   min-width: 250px;
@@ -87,14 +72,12 @@ align-items: center;
 }
 .input-field{
   padding: 5px;
-border: 1px dotted #d1d1d1;
-border-radius: 4px;
-/* min-width: 40px; */
-width: 100%;
+  border: 1px dotted #d1d1d1;
+  border-radius: 4px;
+  width: 100%;
 }
 .btn-container{
   margin: 0 auto;
-  
   bottom: 0;
 }
 button{
@@ -110,9 +93,9 @@ button{
 }
 .gst-input{
   padding: 5px;
-border: 1px dotted #d1d1d1;
-border-radius: 4px;
-width: 40px;
+  border: 1px dotted #d1d1d1;
+  border-radius: 4px;
+  width: 40px;
 
 }
 .gst-label{
@@ -126,23 +109,21 @@ width: 40px;
   background-color: rgb(139,184,241);
 }
 .generate-bill-con{
-float: right;
-margin-left: 100px;
+  float: right;
+  margin-left: 100px;
 }
 .display{
   padding: 50px;
 }
 .display-table-header{
   text-align: center;
-font-weight: 700;
-background: rgb(139,184,241);
-padding: 10px;
-/* border: 1px solid #ccc; */
-width: 500px;
-line-height: 20px;
-
-justify-content: center;
-align-items: center;
+  font-weight: 700;
+  background: rgb(139,184,241);
+  padding: 10px;
+  width: 500px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .edit-btn{
   float: right;
@@ -150,15 +131,13 @@ align-items: center;
 .display-item-description{
   display: flex;
   text-align: start;
-font-weight: 700;
-background: rgb(215,216,220);
-padding: 10px;
-border-bottom: 1px solid #ffff;
-/* width: 100%; */
-line-height: 20px;
-
-justify-content: flex-start;
-align-items: flex-start;
+  font-weight: 700;
+  background: rgb(215,216,220);
+  padding: 10px;
+  border-bottom: 1px solid #ffff;
+  line-height: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .amount{
   min-width: 230px;
