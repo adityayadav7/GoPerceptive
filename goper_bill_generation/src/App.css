@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.main{
+  display: flex;
+}
+.container-left{
+  width: 50%;
+  background-color:rgb(139,184,241);
+}
+.container-right{
+  width: 50%;
+  background-color: rgb(252, 104, 59);
+}
+.bill{
+  padding: 50px;
+  border: grey;
+}
+.bill-container{
+  
+  background-color: yellow;
+}
+.bill-table{
+  padding: 20px;
+}
+.table{
+  /* margin: 0 auto; */
+  border: 1px solid #ccc;
+border-radius: 4px;
+overflow: hidden;
+display: grid;
+width: min-content;
+}
+.table-header{
+  display: grid;
+grid-template-columns: 1fr repeat(2,5fr) 2fr repeat(2,3fr) 2fr;
+border-bottom: 1px solid #ccc;
+}
+.table-header-content{
+  display: flex;
+  text-align: center;
+font-weight: 700;
+background: rgb(139,184,241);
+padding: 10px;
+/* border: 1px solid #ccc; */
+/* width: 100%; */
+line-height: 20px;
+
+justify-content: center;
+align-items: center;
+}
+.item{
+  min-width: 250px;
+}
+.rs{
+  border-left: 1px solid #ccc;
+  min-width: 50px;
+}
+.flex{
+  display: flex;
+}
+.input-field{
+  padding: 5px;
+border: 1px dotted #d1d1d1;
+border-radius: 4px;
+/* min-width: 40px; */
+width: 100%;
+}
+.btn-container{
+  margin: 0 auto;
+  
+  bottom: 0;
+}
+button{
+  background: rgb(139,184,241);
+  border: 1px  solid #ccc;
+  box-shadow:  0 6px 16px 0 rgba(0,0,0,.5);;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.gst{
+  padding: 20px;
+  
+}
+.gst-input{
+  padding: 5px;
+border: 1px dotted #d1d1d1;
+border-radius: 4px;
+width: 40px;
+
+}
+.gst-label{
+  margin: 0 auto;
+  padding: 5px;
+}
+.gst-con{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px;
+  background-color: rgb(139,184,241);
+}
+.generate-bill-con{
+float: right;
+margin-left: 100px;
+}
+.display{
+  padding: 50px;
+}
+.display-table-header{
+  text-align: center;
+font-weight: 700;
+background: rgb(139,184,241);
+padding: 10px;
+/* border: 1px solid #ccc; */
+width: 500px;
+line-height: 20px;
+
+justify-content: center;
+align-items: center;
+}
+.edit-btn{
+  float: right;
+}
+.display-item-description{
+  display: flex;
+  text-align: start;
+font-weight: 700;
+background: rgb(215,216,220);
+padding: 10px;
+border-bottom: 1px solid #ffff;
+/* width: 100%; */
+line-height: 20px;
+
+justify-content: flex-start;
+align-items: flex-start;
+}
+.amount{
+  min-width: 230px;
+  justify-content: center;
+}
+.dotted-line{
+  border-top: 1px dashed red;
+}
+.new-btn{
+  display: flex;
+  float: right;
+  margin-bottom: 20px;
+  padding: 5px 50px 0px 0px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
