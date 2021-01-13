@@ -35,6 +35,13 @@ class Bill extends Component {
         })
         this.setState({ items })
     }
+    handleChangeDisplayItems=(elementIndex)=>(e)=> {
+        let bill = this.state.bill.map((item, i) => {
+            if (elementIndex !== i) return item
+            return { ...item, [e.target.name]: e.target.value }
+        })
+        this.setState({ bill })
+    }
     onGenerateBill(e){
         let allItem=this.state.items
         this.setState({
@@ -68,9 +75,13 @@ class Bill extends Component {
         })
     }
     onChangeEdit(){
-        // e.preventDefault()
         this.setState({
             edit:true
+        })
+    }
+    onChangeCancel(){
+        this.setState({
+            edit:false
         })
     }
 
@@ -156,6 +167,8 @@ class Bill extends Component {
                      totalAmount={this.formatCurrency(this.totalAmount())}
                      edit={this.state.edit}
                      onChangeEdit={e=>this.onChangeEdit(e)}
+                     onChangeCancel={e=>this.onChangeCancel(e)}
+                     handleChangeDisplayItems={this.handleChangeDisplayItems}
                      />
                      
                      }

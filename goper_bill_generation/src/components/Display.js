@@ -10,7 +10,7 @@ class Display extends Component {
 
                         <div className="display-table-header">
                             <div className="edit-btn">
-                                <button onClick={this.props.onChangeEdit}>Edit</button>
+                                {this.props.edit?<button onClick={this.props.onChangeCancel}>Cancel</button>:<button onClick={this.props.onChangeEdit}>Edit</button>}
                             </div>
                         </div>
                     </div>
@@ -25,6 +25,8 @@ class Display extends Component {
                                         <input 
                                          className="input-field"
                                          value={item.itemDesc}
+                                         name="itemDesc"
+                                         onChange={this.props.handleChangeDisplayItems(i)}
                                         />
                                         :
                                         item.itemDesc
@@ -37,6 +39,8 @@ class Display extends Component {
                                         <input 
                                          className="input-field rs"
                                          value={item.price}
+                                         name="price"
+                                         onChange={this.props.handleChangeDisplayItems(i)}
                                         />
                                         :
                                         item.price
